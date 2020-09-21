@@ -2,9 +2,40 @@
 
 Це перша лабораторна робота в нашому курсі з ООП, в ході якої ви маєте отримати навички написання (чи редагування), компіляції та перевірки працездатності (запуску) Java-програм. Робота дуже маленька та складається з двох завдань.
 
-## Завдання 1. Створення та запуск першої програми
+## Завдання 1. Створення та запуск першої програми (сорочки)
 
-1. клонуйте створений для вас репозиторій в Netbeans (детальна інструкція з картинками є [тут](https://netbeans.org/kb/docs/ide/git.html)), відкрийте в [Repl.It](https://repl.it/) ([ось](https://repl.it/talk/learn/Configuring-GitHub-repos-to-run-on-Replit-and-contributing-back/23948) покрокова інструкція з картинками) або просто завантажте його вміст у ZIP-форматі (скориставшись кнопкою "Code" > "Download ZIP") і відкрийте в IDE за вашим вибором
-2. 
+1. **клонуйте** створений для вас репозиторій в Netbeans (детальна інструкція з картинками є [тут](https://netbeans.org/kb/docs/ide/git.html)), **відкрийте** в [Repl.It](https://repl.it/) ([ось](https://repl.it/talk/learn/Configuring-GitHub-repos-to-run-on-Replit-and-contributing-back/23948) покрокова інструкція з картинками) або **просто завантажте** його вміст у ZIP-форматі (скориставшись кнопкою "Code" > "Download ZIP") і відкрийте в IDE за вашим вибором
+2. створіть новий файл **Shirt.java**, в якому наберіть наступний текст (коментарі можна не писати - вони тут наведені лише для вас):
+
+``` java
+public class Shirt {
+  public int shirtID = 0; // стандартне значення номера моделі сорочки
+  public String description = "-description required-"; // стандартний опис сорочки
+  // коди кольорів: R=червоний, B=синій, G=зелений, U=невідомо
+  public char colorCode = 'U';
+  public double price = 0.0; // стандартна вартість сорочки
+  public int quantityInStock = 0; // стандартна кількість на складі
+  
+  // цей метод просто виводить всю інформацію про сорочку на екран
+  public void displayShirtInformation() {
+    System.out.println("Shirt ID: " + shirtID);
+    System.out.println("Shirt description:" + description);
+    System.out.println("Color Code: " + colorCode);
+    System.out.println("Shirt price: $" + price);
+    System.out.println("Quantity in stock: " + quantityInStock);
+  } // кінець методу displayShirtInformation
+} // кінець опису класу
+```
+
+3. **збережіть** файл
+4. відкрийте файл **ShirtTest.java** з цього репозиторію
+5. **запустіть** його (<kbd>F6</kbd> у NetBeans)
+6. зробіть та збережіть у файл **скріншот** результатів роботи програми 
+7. замініть у файлі **Shirt.java** номер сорочки та її вартість довільними значеннями 
+8. запустіть файл повторно
+9. зробіть та збережіть у файл **скріншот** нових результатів роботи програми 
+10. створіть файл **task1.md** і додайте туди ці скріншоти (УВАГА! Має бути видно код програми!)
+
+## Завдання 1. Створення та запуск іншої програми (цитати)
 
 
